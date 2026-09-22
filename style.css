@@ -1,118 +1,71 @@
-/* ==========================================================================
-   Configuración General y Accesibilidad (Para evitar alertas WAVE)
-   ========================================================================== */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #212121; /* Color oscuro con alto contraste para pasar WAVE */
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parques Naturales de Colombia</title>
+    <!-- Enlace directo para asegurar la lectura del CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Ocultar visualmente el enlace de salto, pero dejarlo accesible para lectores de pantalla */
-.saltar-enlace {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #004d40;
-    color: white;
-    padding: 8px;
-    z-index: 100;
-    transition: top 0.2s;
-}
+    <!-- Requisito de accesibilidad WAVE -->
+    <a href="#contenido-principal" class="saltar-enlace">Saltar al contenido principal</a>
 
-.saltar-enlace:focus {
-    top: 0; /* Aparece arriba si el usuario usa la tecla TAB */
-}
+    <header>
+        <nav>
+            <img src="https://picsum.photos" alt="Logotipo oficial de Parques Naturales">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Enlaces con colores contrastantes para evitar errores de color */
-a {
-    color: #0066cc;
-    text-decoration: underline;
-}
+    <main id="contenido-principal">
+        <h1>Descubre la Biodiversidad de Colombia</h1>
+        <p>Explora los santuarios naturales más impactantes del país y conéctate con la fauna y flora protegida. Colombia cuenta con ecosistemas únicos que albergan miles de especies endémicas esenciales para el equilibrio ambiental global.</p>
 
-a:hover {
-    color: #003366;
-}
+        <!-- Sección de cuadrícula (Grid de dos columnas) -->
+        <h2>Santuarios Destacados (Sección Grid)</h2>
+        <section class="grid">
+            <div class="tarjeta">
+                <img src="https://picsum.photos" alt="Paisaje montañoso del Parque Nacional Tayrona con palmeras y mar">
+                <h3>Parque Nacional Tayrona</h3>
+                <p>Un encuentro único entre la selva tropical y las playas vírgenes del mar Caribe. Es hábitat de diversas comunidades indígenas y una reserva biológica invaluable para la región del Magdalena.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="https://picsum.photos" alt="Sendero rodeado de frailejones en el Parque Los Nevados">
+                <h3>Parque Los Nevados</h3>
+                <p>Ecosistemas de páramo imponentes y picos cubiertos de nieve en el corazón del eje cafetero. Sus complejos lagunares y frailejones son los principales reguladores de agua para millones de habitantes.</p>
+            </div>
+        </section>
 
-/* ==========================================================================
-   REQUERIMIENTOS ESPECÍFICOS DE LA TAREA (Evaluados por tus pares)
-   ========================================================================== */
+        <!-- Sección Flexible (Flexbox para las especies) -->
+        <h2>Fauna Protegida (Sección Flex)</h2>
+        <section class="flex">
+            <div class="item-flex">
+                <img src="https://picsum.photos" alt="Primer plano de un jaguar en la selva amazónica">
+                <h4>El Jaguar</h4>
+                <p>El felino más grande de América, considerado un protector clave del ecosistema de las selvas y bosques húmedos colombianos.</p>
+            </div>
+            <div class="item-flex">
+                <img src="https://picsum.photos" alt="Cóndor de los Andes sobrevolando los cañones">
+                <h4>El Cóndor</h4>
+                <p>Ave emblemática de los Andes que representa la libertad de nuestras cumbres. Se encuentra en programas estrictos de conservación.</p>
+            </div>
+            <div class="item-flex">
+                <img src="https://picsum.photos" alt="Ojo de anteojos caminando entre la vegetación húmeda">
+                <h4>Oso de Anteojos</h4>
+                <p>Única especie de oso nativa de Sudamérica. Habita en los bosques de niebla y es fundamental para la dispersión de semillas.</p>
+            </div>
+        </section>
+    </main>
 
-/* 1. Comentar el estilo existente para el elemento li (Se deja vacío/comentado) */
-/* li {
-    display: inline;
-} */
+    <footer>
+        <p>&copy; 2026 Preservación Natural S.A. - Contraste optimizado para evaluación WAVE.</p>
+    </footer>
 
-/* 2. Cambiar nav para usar inline-block y anchura de aproximadamente el 80% */
-nav {
-    display: inline-block;
-    width: 80%;
-    background-color: #f5f5f5;
-    padding: 15px;
-}
-
-/* 3. Selector descendente: Estilar SOLO la imagen dentro de nav al 10% de ancho */
-nav img {
-    width: 10%;
-    height: auto;
-    vertical-align: middle;
-}
-
-nav ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-/* 4. Estilar la clase grid utilizando una rejilla de dos columnas (~40% cada una) */
-/* Nota: El selector comienza con un punto (.) tal como exige la guía */
-.grid {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    /* Atributos adicionales para igualar capturas (justify, align, gaps) */
-    justify-content: space-around;
-    align-items: start;
-    row-gap: 20px;
-    margin-bottom: 40px;
-}
-
-/* 5. Selector descendente: Estilar SOLO las imágenes de la clase grid al 100% */
-/* (Esto no afecta a las imágenes de la clase flex) */
-.grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* 6. Estilar la clase flex usando Flexbox y propiedades de distribución */
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #e0f2f1;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.item-flex {
-    width: 30%;
-    text-align: center;
-    background: white;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #b2dfdb;
-}
-
-/* Las imágenes en flex mantienen su tamaño natural o el heredado del contenedor */
-.item-flex img {
-    max-width: 100%;
-    height: auto;
-}
+</body>
+</html>
