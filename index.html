@@ -4,64 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parques Naturales de Colombia</title>
-    <!-- Enlace correcto a la hoja de estilos externa -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Ruta corregida para forzar la lectura en GitHub Pages -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 
-    <!-- Requisito WAVE: Enlace para saltar al contenido principal -->
+    <!-- Requisito de accesibilidad WAVE -->
     <a href="#contenido-principal" class="saltar-enlace">Saltar al contenido principal</a>
 
     <header>
         <nav>
-            <!-- Imagen dentro de nav para el selector descendente -->
             <img src="https://picsum.photos" alt="Logotipo oficial de Parques Naturales">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html">Especies</a></li>
-                <li><a href="index.html">Planes</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Requisito de accesibilidad: Etiqueta main con el ID correspondiente -->
     <main id="contenido-principal">
-        
         <h1>Descubre la Biodiversidad de Colombia</h1>
-        <p>Explora los santuarios naturales más impactantes del país y conéctate con la fauna y flora protegida.</p>
+        <p>Explora los santuarios naturales más impactantes del país y conéctate con la fauna y flora protegida. Colombia cuenta con ecosistemas únicos que albergan miles de especies endémicas esenciales para el equilibrio ambiental global.</p>
 
-        <!-- Sección de cuadrícula (Grid de dos columnas) -->
+        <!-- Sección de cuadrícula (Grid de dos columnas requerida) -->
         <h2>Santuarios Destacados (Sección Grid)</h2>
         <section class="grid">
             <div class="tarjeta">
-                <img src="https://picsum.photos kim/600/400" alt="Paisaje montañoso del Parque Nacional Tayrona con palmeras y mar">
+                <img src="https://unsplash.com" alt="Paisaje montañoso del Parque Nacional Tayrona con palmeras y mar">
                 <h3>Parque Nacional Tayrona</h3>
-                <p>Un encuentro único entre la selva tropical y las playas vírgenes del mar Caribe.</p>
+                <p>Un encuentro único entre la selva tropical y las playas vírgenes del mar Caribe. Es hábitat de diversas comunidades indígenas y una reserva biológica invaluable para la región del Magdalena.</p>
             </div>
             <div class="tarjeta">
-                <img src="https://picsum.photos" alt="Sendero rodeado de frailejones en el Parque Los Nevados">
+                <img src="https://unsplash.com" alt="Sendero rodeado de frailejones en el Parque Los Nevados">
                 <h3>Parque Los Nevados</h3>
-                <p>Ecosistemas de páramo imponentes y picos cubiertos de nieve en el corazón del eje cafetero.</p>
+                <p>Ecosistemas de páramo imponentes y picos cubiertos de nieve en el corazón del eje cafetero. Sus complejos lagunares y frailejones son los principales reguladores de agua para millones de habitantes.</p>
             </div>
         </section>
 
-        <!-- Sección Flexible (Flexbox para las especies) -->
+        <!-- Sección Flexible (Flexbox para las especies requerido) -->
         <h2>Fauna Protegida (Sección Flex)</h2>
         <section class="flex">
             <div class="item-flex">
-                <img src="https://picsum.photos74/300/200" alt="Primer plano de un jaguar en la selva amazónica">
+                <img src="https://unsplash.com" alt="Primer plano de un jaguar en la selva amazónica">
                 <h4>El Jaguar</h4>
+                <p>El felino más grande de América, considerado un protector clave del ecosistema de las selvas y bosques húmedos colombianos.</p>
             </div>
             <div class="item-flex">
-                <img src="https://picsum.photos24/300/200" alt="Cóndor de los Andes sobrevolando los cañones">
+                <img src="https://unsplash.com" alt="Cóndor de los Andes sobrevolando los cañones">
                 <h4>El Cóndor</h4>
+                <p>Ave emblemática de los Andes que representa la libertad de nuestras cumbres. Se encuentra en programas estrictos de conservación.</p>
             </div>
             <div class="item-flex">
-                <img src="https://picsum.photos62/300/200" alt="Ojo de anteojos caminando entre la vegetación húmeda">
+                <img src="https://unsplash.com" alt="Oso de anteojos caminando entre la vegetación húmeda">
                 <h4>Oso de Anteojos</h4>
+                <p>Única especie de oso nativa de Sudamérica. Habita en los bosques de niebla y es fundamental para la dispersión de semillas.</p>
             </div>
         </section>
-
     </main>
 
     <footer>
