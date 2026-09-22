@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería Fotográfica - Parques Naturales</title>
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 
+    <!-- Requisito de accesibilidad WAVE -->
     <a href="#contenido-principal" class="saltar-enlace">Saltar al contenido principal</a>
 
     <header>
         <nav>
-            <svg width="40" height="40" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 10px;" role="img" aria-label="Logotipo oficial de Parques Naturales">
-                <polygon points="50,15 90,85 10,85" fill="#004d40"/>
-                <circle cx="50" cy="55" r="15" fill="#81c784"/>
-            </svg>
+            <img src="./jaguar.jpg" alt="Logotipo oficial de Parques Naturales" style="border-radius: 50%;">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./galeria.html">Galería</a></li>
@@ -28,49 +27,34 @@
         <h1>Galería de Ecosistemas</h1>
         <p>Una muestra visual de la riqueza natural protegida en nuestro territorio nacional.</p>
 
+        <!-- REQUISITO COURSERA: Clase Grid con dos columnas al 40% cada una -->
         <h2>Paisajes en Cuadrícula (Grid)</h2>
         <section class="grid">
             <div class="tarjeta">
-                <!-- Foto Dibujada por Código - Bosques de Niebla -->
-                <svg viewBox="0 0 200 120" style="width:100%; background:#eceff1; border-radius:8px;" role="img" aria-label="Ilustración de Bosques de Niebla">
-                    <rect width="200" height="120" fill="#cfd8dc"/>
-                    <ellipse cx="50" cy="70" rx="40" ry="20" fill="#b0bec5" opacity="0.7"/>
-                    <ellipse cx="140" cy="60" rx="50" ry="25" fill="#b0bec5" opacity="0.6"/>
-                </svg>
+                <!-- Tu foto real del bosque de niebla -->
+                <img src="./bosque-de-niebla.jpg" alt="Fotografía real de un Bosque de Niebla envuelto en bruma">
                 <h3>Bosques de Niebla</h3>
             </div>
             <div class="tarjeta">
-                <!-- Foto Dibujada por Código - Valles Hidrográficos -->
-                <svg viewBox="0 0 200 120" style="width:100%; background:#e8f5e9; border-radius:8px;" role="img" aria-label="Ilustración de Valles Hidrográficos">
-                    <rect width="200" height="120" fill="#c8e6c9"/>
-                    <path d="M0,60 Q100,120 200,40 L200,120 L0,120 Z" fill="#81c784"/>
-                    <path d="M0,80 Q100,20 200,90" fill="none" stroke="#2196f3" stroke-width="8"/>
-                </svg>
+                <!-- Tu foto real de valles hidrográficos -->
+                <img src="./valles-hidrograficos.jpg" alt="Fotografía real de un Valle Hidrográfico con un río fluyendo">
                 <h3>Valles Hidrográficos</h3>
             </div>
         </section>
 
+        <!-- REQUISITO COURSERA: Clase Flexbox para postales rápidas -->
         <h2>Postales Rápidas (Flex)</h2>
         <section class="flex">
             <div class="item-flex">
-                <svg viewBox="0 0 100 100" style="width:80px; height:80px; margin:0 auto; display:block;" role="img" aria-label="Icono Flora Tropical">
-                    <circle cx="50" cy="50" r="35" fill="#a5d6a7"/>
-                    <path d="M50,15 Q30,50 50,85 Q70,50 50,15 Z" fill="#2e7d32"/>
-                </svg>
+                <img src="./flora-tropical.jpg" alt="Fotografía en primer plano de flores exóticas tropicales">
                 <h4>Flora Tropical</h4>
             </div>
             <div class="item-flex">
-                <svg viewBox="0 0 100 100" style="width:80px; height:80px; margin:0 auto; display:block;" role="img" aria-label="Icono Senderos">
-                    <circle cx="50" cy="50" r="35" fill="#ffe082"/>
-                    <path d="M20,80 Q50,20 80,20" fill="none" stroke="#795548" stroke-width="6"/>
-                </svg>
+                <img src="./senderos.jpg" alt="Fotografía de un sendero ecológico de madera dentro del bosque">
                 <h4>Senderos Seguros</h4>
             </div>
             <div class="item-flex">
-                <svg viewBox="0 0 100 100" style="width:80px; height:80px; margin:0 auto; display:block;" role="img" aria-label="Icono Amaneceres">
-                    <circle cx="50" cy="50" r="35" fill="#ffcc80"/>
-                    <circle cx="50" cy="50" r="15" fill="#e65100"/>
-                </svg>
+                <img src="./amaneceres.jpg" alt="Amanecer dorado iluminando las montañas del páramo">
                 <h4>Amaneceres en el Páramo</h4>
             </div>
         </section>
