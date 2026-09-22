@@ -1,8 +1,7 @@
-/* Configuración Base Obligatoria */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff !important;
-    color: #212121 !important;
+    background-color: #ffffff;
+    color: #212121;
     margin: 0;
     padding: 20px;
 }
@@ -21,18 +20,19 @@ body {
     top: 0;
 }
 
-/* REQUISITO COURSERA: Menú nav como inline-block y ancho aproximado al 80% */
+/* REQUISITO: nav inline-block y ancho 80% */
 nav {
-    display: inline-block !important;
-    width: 80% !important;
-    background-color: #f5f5f5 !important;
+    display: inline-block;
+    width: 80%;
+    background-color: #f5f5f5;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* REQUISITO COURSERA: Selector descendente para la imagen dentro de nav al 10% */
+/* REQUISITO: Selector descendente para imagen en nav al 10% */
 nav img {
-    width: 10% !important;
+    width: 10%;
     height: auto;
     vertical-align: middle;
 }
@@ -41,66 +41,91 @@ nav ul {
     display: inline-block;
     list-style: none;
     padding: 0;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 25px;
     vertical-align: middle;
 }
 
 nav ul li {
-    display: inline !important;
+    display: inline;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: #0066cc !important;
+    color: #0066cc;
     font-weight: bold;
     text-decoration: underline;
 }
 
-/* REQUISITO COURSERA: Clase grid utilizando una rejilla de dos columnas al 40% cada una */
+/* REQUISITO: Clase grid con dos columnas al 40% cada una */
 .grid {
-    display: grid !important;
-    grid-template-columns: 40% 40% !important;
-    justify-content: space-around !important;
+    display: grid;
+    grid-template-columns: 40% 40%; /* Mantenemos el 40% exacto que pide Coursera */
+    justify-content: space-around;
     row-gap: 25px;
     margin-top: 30px;
 }
 
-/* REQUISITO COURSERA: Selector descendente para imágenes de la clase grid al 100% */
+/* REQUISITO: Selector descendente para imágenes dentro de grid al 100% */
 .grid img {
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 8px;
-    display: block;
+    width: 100%;
+    height: auto; /* Hace que la foto mantenga su proporción natural sin estirar el cuadro */
+    max-height: 250px; /* Evita que fotos muy verticales se hagan gigantes */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
 }
 
-/* REQUISITO COURSERA: Clase flex que utiliza Flexbox estructurado */
+/* Cuadros compactos para la sección Grid */
+.tarjeta {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+    height: fit-content; /* CORRECCIÓN: El cuadro blanco se encoge para adaptarse justo al texto */
+    padding-bottom: 15px;
+}
+
+.tarjeta h3, .tarjeta p {
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+/* REQUISITO: Clase flex con uso de flexbox estructurado */
 .flex {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: space-between !important;
-    background-color: #e0f2f1 !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e0f2f1;
     padding: 20px;
     margin-top: 30px;
     border-radius: 8px;
 }
 
+/* Cuadros compactos para los animales en Flexbox */
 .item-flex {
-    width: 30% !important;
-    background: #ffffff !important;
+    width: 31%;
+    background: #ffffff;
     padding: 15px;
     text-align: center;
     border: 1px solid #b2dfdb;
     box-sizing: border-box;
-    border-radius: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: fit-content; /* CORRECCIÓN: Evita el espacio vacío abajo si un texto es más corto que otro */
 }
 
 .item-flex img {
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 4px;
+    width: 100%;
+    height: auto; /* La imagen toma su tamaño real sin empujar el cuadro hacia abajo */
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-.tarjeta h3, .item-flex h4 {
+.item-flex h4, .item-flex p {
+    margin: 10px 0 5px 0;
+}
+
+h1, h2 {
     color: #004d40;
-    margin-top: 10px;
 }
