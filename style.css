@@ -45,13 +45,16 @@ nav ul {
     vertical-align: middle;
 }
 
+/* REQUISITO OBLIGATORIO: Comentar el estilo existente para el elemento li */
+/* 
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
+*/
 
 nav ul li a {
-    color: #0066cc;
+    color: #004d40; /* CORRECCIÓN: Azul cambiado a verde oscuro para pasar el contraste WAVE */
     font-weight: bold;
     text-decoration: underline;
 }
@@ -59,7 +62,7 @@ nav ul li a {
 /* REQUISITO: Clase grid con dos columnas al 40% cada una */
 .grid {
     display: grid;
-    grid-template-columns: 40% 40%; /* Mantenemos el 40% exacto que pide Coursera */
+    grid-template-columns: 40% 40%; 
     justify-content: space-around;
     row-gap: 25px;
     margin-top: 30px;
@@ -68,8 +71,8 @@ nav ul li a {
 /* REQUISITO: Selector descendente para imágenes dentro de grid al 100% */
 .grid img {
     width: 100%;
-    height: auto; /* Hace que la foto mantenga su proporción natural sin estirar el cuadro */
-    max-height: 250px; /* Evita que fotos muy verticales se hagan gigantes */
+    height: auto; 
+    max-height: 250px; 
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
@@ -81,7 +84,7 @@ nav ul li a {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     overflow: hidden;
-    height: fit-content; /* CORRECCIÓN: El cuadro blanco se encoge para adaptarse justo al texto */
+    height: fit-content; 
     padding-bottom: 15px;
 }
 
@@ -111,12 +114,12 @@ nav ul li a {
     box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    height: fit-content; /* CORRECCIÓN: Evita el espacio vacío abajo si un texto es más corto que otro */
+    height: fit-content; 
 }
 
 .item-flex img {
     width: 100%;
-    height: auto; /* La imagen toma su tamaño real sin empujar el cuadro hacia abajo */
+    height: auto; 
     max-height: 180px;
     object-fit: cover;
     border-radius: 6px;
