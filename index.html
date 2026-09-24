@@ -1,14 +1,71 @@
-<a href="#main" class="saltar-enlace">Saltar al contenido principal</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parques Naturales de Colombia</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
 
-<header>
-    <nav>
-        <img src="./jaguar.jpg" alt="Logotipo oficial de Parques Naturales" style="border-radius: 50%;">
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./parks.html">Galería</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Requisito obligatorio de accesibilidad WAVE -->
+    <a href="#main" class="saltar-enlace">Saltar al contenido principal</a>
 
-<main id="main">
+    <header>
+        <nav>
+            <img src="./jaguar.jpg" alt="Logotipo oficial de Parques Naturales" style="border-radius: 50%;">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./parks.html">Galería</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Descubre la Biodiversidad de Colombia</h1>
+        <p>Explora los santuarios naturales más imponentes y conéctate con la fauna y flora protegida de nuestro territorio. Colombia es reconocida a nivel mundial como uno de los países más megadiversos del planeta, albergando una cantidad excepcional de especies endémicas y ecosistemas vitales que son fundamentales para la regulación del clima y el equilibrio ambiental de toda la región americana.</p>
+
+        <!-- REQUISITO COURSERA: Clase Grid con dos columnas al 40% cada una -->
+        <h2>Santuarios Destacados (Sección Grid)</h2>
+        <section class="grid">
+            <div class="tarjeta">
+                <img src="./tairona.jpg" alt="Paisaje montañoso del Parque Nacional Tayrona con palmeras y mar">
+                <h3>Parque Nacional Tayrona</h3>
+                <p>Ubicado en las faldas de la Sierra Nevada de Santa Marta, este parque ofrece un encuentro único entre la selva tropical húmeda y las playas vírgenes del mar Caribe. Es un santuario invaluable de biodiversidad terrestre y marina que sirve de hogar a diversas comunidades indígenas ancestrales que protegen su territorio sagrado.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="./parque-nevado.jpg" alt="Sendero rodeado de frailejones en el Parque Los Nevados">
+                <h3>Parque Los Nevados</h3>
+                <p>Situado en el corazón del eje cafetero, este parque protege imponentes ecosistemas de páramo y majestuosos picos cubiertos de nieves perpetuas. Sus complejos lagunares y extensos bosques de frailejones actúan como inmensas esponjas naturales de agua, siendo los principales reguladores del recurso hídrico para millones de habitantes de la región andina.</p>
+            </div>
+        </section>
+
+        <!-- REQUISITO COURSERA: Clase Flexbox para la fauna en filas horizontales -->
+        <h2>Fauna Protegida en Conservación (Sección Flex)</h2>
+        <section class="flex">
+            <div class="item-flex">
+                <img src="./jaguar.jpg" alt="Primer plano de un jaguar en la selva amazónica">
+                <h4>El Jaguar</h4>
+                <p>Es el felino más grande de todo el continente americano y se considera una especie paraguas esencial. Su presencia en las selvas protegidas garantiza la salud general del ecosistema, controlando las poblaciones de otras especies y manteniendo el equilibrio biológico natural de los bosques tropicales colombianos.</p>
+            </div>
+            <div class="item-flex">
+                <img src="./condor.jpg" alt="Cóndor de los Andes sobrevolando las cumbres montañosas">
+                <h4>El Cóndor</h4>
+                <p>Esta ave emblemática de la cordillera de los Andes representa la libertad de nuestras cumbres más altas. Actualmente se encuentra catalogada bajo un estado crítico de conservación, lo que ha impulsado la creación de programas estrictos de monitoreo biológico y reintroducción en áreas naturales protegidas.</p>
+            </div>
+            <div class="item-flex">
+                <img src="./oso-de-anteojos.jpg" alt="Oso de anteojos caminando entre la vegetación húmeda">
+                <h4>Oso de Anteojos</h4>
+                <p>Es la única especie de oso nativa de Sudamérica. Habita en los densos y húmedos bosques de niebla de los Andes colombianos y desempeña un rol ecológico crucial como sembrador del bosque, debido a su capacidad para dispersar semillas a lo largo de grandes extensiones de terreno de alta montaña.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Preservación Natural S.A. - Proyecto Final de Estilos CSS3.</p>
+    </footer>
+
+</body>
+</html>
