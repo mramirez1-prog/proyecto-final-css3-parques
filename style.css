@@ -37,12 +37,14 @@ nav img {
     vertical-align: middle;
 }
 
+/* CORRECCIÓN: Usamos inline-flex para que los enlaces vuelvan a ponerse en fila horizontal */
 nav ul {
-    display: inline-block;
+    display: inline-flex;
     list-style: none;
     padding: 0;
     margin: 0 0 0 25px;
     vertical-align: middle;
+    gap: 20px;
 }
 
 /* REQUISITO OBLIGATORIO: Comentar el estilo existente para el elemento li */
@@ -73,7 +75,7 @@ nav ul li a {
     width: 100%;
     height: auto; 
     max-height: 250px; 
-    object-fit: cover;
+    object-fit: contain; /* CORRECCIÓN: Cambiado a contain para que no corte los paisajes */
     border-radius: 8px 8px 0 0;
 }
 
@@ -121,7 +123,7 @@ nav ul li a {
     width: 100%;
     height: auto; 
     max-height: 180px;
-    object-fit: cover;
+    object-fit: contain; /* CORRECCIÓN: Cambiado a contain para ver la cara entera del oso y del cóndor */
     border-radius: 6px;
 }
 
